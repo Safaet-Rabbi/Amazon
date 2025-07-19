@@ -1,0 +1,19 @@
+{
+  "name": "order-management-system-root",
+  "version": "1.0.0",
+  "description": "Order Management System - MERN Stack Application",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd order-management-system && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../order-management-system && npm install",
+    "seed": "cd backend && npm run seed",
+    "start": "npm run dev"
+  },
+  "keywords": ["order-management", "mern", "mongodb", "express", "react", "nodejs"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
