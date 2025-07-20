@@ -1,0 +1,21 @@
+{
+  "name": "order-management-system",
+  "version": "1.0.0",
+  "description": "A complete MERN stack order management system for beginners",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-server": "cd backend && npm install",
+    "install-client": "cd frontend && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": ["mern", "order-management", "react", "node", "mongodb", "express"],
+  "author": "MERN Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
